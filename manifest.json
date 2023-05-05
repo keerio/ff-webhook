@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Bookmark Webhook Sender",
+    "version": "1.0",
+    "description": "Send a webhook every time a page is bookmarked",
+    "applications": {
+        "gecko": {
+          "id": "{737e4efb-8209-4c63-889a-7bf4244972e6}"
+        }
+      },
+    "permissions": [
+      "bookmarks",
+      "webRequest",
+      "<all_urls>",
+      "storage",
+      "tabs"
+    ],
+    "background": {
+      "scripts": ["webextension-polyfill.min.js", "background.js"]
+    },
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": true,
+      "chrome_style": true
+    }
+  }
+  

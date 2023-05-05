@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark Webhook Sender Options</title>
+    <style>
+      /* Add any custom styles here */
+      textarea#webhook-url {
+        white-space: nowrap;
+        overflow-wrap: normal;
+        overflow-x: scroll;
+        resize: none;
+      }
+    </style>
+    <script src="webextension-polyfill.min.js"></script>
+  </head>
+  <body>
+    <h1>Bookmark Webhook Sender Options</h1>
+    <form id="options-form">
+      <label for="webhook-url">Webhook URL:</label>
+      <textarea id="webhook-url" rows="1" cols="200" required></textarea>
+      <button type="submit">Save</button>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>
+
